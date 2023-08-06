@@ -7,6 +7,7 @@ import { ImagesModule } from './images/images.module';
 import { CategoriesModule } from './categories/categories.module';
 import { Category } from './categories/entities/category.entity';
 import { Image } from './images/entities/image.entity';
+import { FilesModule } from './files/files.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { Image } from './images/entities/image.entity';
     }),
     ImagesModule,
     CategoriesModule,
+    FilesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
